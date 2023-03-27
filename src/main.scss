@@ -106,7 +106,7 @@ h2{
   background-attachment: fixed;
   background-position: left;
   overflow: hidden;
-
+  position: relative;
   
   &__pages{
     display: flex;
@@ -239,7 +239,7 @@ h2{
   
     height: 100vh;
     padding: 3.5rem;
-  
+    flex-wrap: wrap;
     background-size: cover;
     background-repeat: no-repeat;
     &__text{
