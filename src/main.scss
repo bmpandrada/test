@@ -106,7 +106,7 @@ h2{
   background-attachment: fixed;
   background-position: left;
   overflow: hidden;
-  position: relative;
+
   
   &__pages{
     display: flex;
@@ -174,7 +174,7 @@ h2{
   color: $color-ligth;
   background-color: $tertiary-color;
   font-size: .9rem;
-  font-weight: 00;
+  font-weight: 100;
   letter-spacing: .2rem;
   text-transform: capitalize;
   padding: .5rem;
