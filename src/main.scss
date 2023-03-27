@@ -107,7 +107,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;    
-    
+    height: 90vh;
     gap: 2rem;
     width: 100%;
   
@@ -238,8 +238,6 @@ h2{
     &__text{
       width: 100%;
   }
-  &__pages{
-    margin-top: 1rem;
-  }
+ 
   }
 }
