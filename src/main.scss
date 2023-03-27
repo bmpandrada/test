@@ -91,22 +91,26 @@ h2{
 
 
 .container{
-  height: 100vh;
+  // height: 100vh;
   width: 100%;
   
-  padding: 5rem;
-  background-image: url('./components/imgs/wallpaper.png');
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: left;
-  overflow: hidden;
+  
  
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
   
   &__pages{
+    background-image: url('./components/imgs/wallpaper.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    padding: 5rem;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center; 
     height: 100vh;
     gap: 2rem;
     width: 100%;
@@ -216,6 +220,7 @@ h2{
     .container__pages{
       flex-direction: column;
       width: 100%;
+      padding: 2.5rem;
       p{
         width: 100%;
         font-size: 1.2rem;
@@ -231,7 +236,7 @@ h2{
   .container{
     width: 100%;
     height: 100vh;
-    padding: 2.5rem;
+   
   
     background-size: cover;
     background-repeat: no-repeat;
