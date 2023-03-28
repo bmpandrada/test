@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import reactLogo from '../../assets/logo/react.svg';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
+import SendIcon from '@mui/icons-material/Send';
 import { navLinks } from '../../data/data';
 import {
     BrowserRouter as Router, Link
@@ -16,6 +19,11 @@ const Nabar = () => {
       <Link to='/'> <img className='navbar__img' src={reactLogo} alt="logo" />
       </Link>
     </div>
+    <a href="https://www.linkedin.com/in/bruce-michael-andrada-565b561a4/"><LinkedInIcon  className='icon'/></a>
+    <a href="https://bruce-folio.vercel.app/"><ContactPageIcon  className='icon'/></a>
+    <a href = "mailto: bmpandrada@gmail.com"><SendIcon  className='icon'/></a>
+
+
     <ul className={`${toogle ? 'navbar__list' : 'navbar__list  show active'}`}>
       {navLinks.map(({id, links, title})=>{
 
