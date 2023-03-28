@@ -22,7 +22,7 @@ const Home = () => {
       </div>
 
       <div className='container__page2 page--2'>
-      <LotAnimation />
+      <LotAnimation src="https://assets2.lottiefiles.com/packages/lf20_xRmNN8.json" />
 
       </div>
       </div>

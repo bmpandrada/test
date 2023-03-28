@@ -1,5 +1,6 @@
 import React from 'react'
 import state from '../imgs/useSTate.png'
+import LotAnimation from '../../assets/loottie/LotAnimation';
 
 
 const UseStates = () => {
@@ -8,6 +9,12 @@ const UseStates = () => {
       
       <div className="container__pages">
         <div className='container__page1 page--1'>
+          <div className='lt2'>
+            <div className='lt3'>
+            <LotAnimation src='https://assets8.lottiefiles.com/private_files/lf30_lrrsdnr5.json' />
+
+            </div>
+          </div>
       <img className='container__img' src={state} alt="" />
       </div>
       <div className='container__page2 page--2'>

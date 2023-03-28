@@ -3,12 +3,13 @@ import { Player } from '@lottiefiles/react-lottie-player';
 
 import React from 'react'
 
-const LotAnimation = () => {
+const LotAnimation = ({src}) => {
+  
   return (
     <Player className='lot'
     autoplay
     loop
-    src="https://assets2.lottiefiles.com/packages/lf20_xRmNN8.json"
+    src={src}
     style={{ height: '300px', width: '300px' }}
   >
     
