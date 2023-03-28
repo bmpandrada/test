@@ -372,15 +372,20 @@ a .icon{
 @media only screen and (max-width: 600px) {
  
   .navbar{
+    &__iconSm{
+      color: $font-hover;
+      margin-right: 1rem;
+      margin-bottom: -.3rem;
    
+    }
     padding: 1rem 3rem;
     &__submenu{
       
       z-index: 9999;
       position: relative;
-      left: 0;
+      left: 35%;
      
-
+      
       top: 0;
       background-color:#00000000;
       border: 0;
@@ -392,7 +397,7 @@ a .icon{
       position: relative;
       transition: all 0.6s ease-in;
       transition-delay: 0.6s;
-     
+    
       &:hover  .navbar__submenu {
         display: inline;
       
