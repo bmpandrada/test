@@ -14,11 +14,9 @@ const Home = () => {
           
        
         <div className='container__page3 page--3'>
-          
-        <h1 > </h1>
         <ul className='container__h1'>
           <li>Welcome to React Refresher </li>
-          <li><a href={link}>Learn React</a></li>
+          <li className='container__h2'><a href={link}>Learn React</a></li>
           <li>
           <div className='container__vids'>
 
