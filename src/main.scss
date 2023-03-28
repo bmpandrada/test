@@ -113,6 +113,7 @@ a .icon{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: $tertiary-color;
 }
 
 .container{
@@ -288,6 +289,18 @@ a .icon{
     position: absolute;
    top: 0;
   
+  }
+  .lt4{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $tertiary-color;
+  }
+  .lt5{
+    position: absolute;
+    margin-top: -5rem;
   }
   
 }

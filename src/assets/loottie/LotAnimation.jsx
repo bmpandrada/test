@@ -9,6 +9,7 @@ const LotAnimation = ({src}) => {
     <Player className='lot'
     autoplay
     loop
+    speed='.6'
     src={src}
     style={{ height: '300px', width: '300px' }}
   >
