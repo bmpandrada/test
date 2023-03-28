@@ -28,8 +28,9 @@ const Nabar = () => {
       {navLinks.map(({id, links, title})=>{
 
      
-     return <li className='navbar__item'>
-        <Link to={links} onClick={()=>setToggle(!toogle)} key={id}>{title}</Link>
+     return <li className='navbar__item' key={id}>
+        <Link to={links} onClick={()=>setToggle(!toogle)} 
+        >{title}</Link>
       </li>
     })}
       

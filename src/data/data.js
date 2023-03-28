@@ -2,7 +2,9 @@ import img1 from '../components/imgs/useSTate.png'
 
 export const navLinks = [
     {id:1, links:'/', title:'Home'},
-    {id:2, links:'/UseStates', title:'useState'}
+    {id:2, links:'/UseStates', title:'useState'},
+    {id:3, links:'/UseEffects', title:'UseEffect'},
+    {id:4, links:'/UseRefs', title:'UseRef'},
 ]
 
 export const homeData = [

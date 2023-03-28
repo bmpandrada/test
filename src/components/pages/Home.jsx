@@ -14,11 +14,19 @@ const Home = () => {
           
        
         <div className='container__page3 page--3'>
+          
         <h1 > </h1>
         <ul className='container__h1'>
           <li>Welcome to React Refresher </li>
           <li><a href={link}>Learn React</a></li>
+          <li>
+          <div className='container__vids'>
+
+          <iframe className='container__vid' width="560" height="315" src="https://www.youtube.com/embed/Vcyen7QxyBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          </li>
         </ul>
+        
       </div>
 
       <div className='container__page2 page--2'>

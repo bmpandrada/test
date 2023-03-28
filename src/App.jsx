@@ -8,6 +8,8 @@ import Nabar from './components/navbar/Nabar';
 import LotAnimation from './assets/loottie/LotAnimation';
 import Home from './components/pages/Home';
 import UseStates from './components/pages/UseStates';
+import UseEffects from './components/pages/UseEffects';
+import UseRefs from './components/pages/UseRefs';
 import { useEffect, useState } from 'react';
 
 
@@ -33,6 +35,8 @@ function App() {
      
     <Route exact path='/' element={< Home />}></Route>
     <Route exact path='/UseStates' element={< UseStates />}></Route>
+    <Route exact path='/UseEffects' element={< UseEffects />}></Route>
+    <Route exact path='/UseRefs' element={< UseRefs />}></Route>
 
 
 </Routes>
