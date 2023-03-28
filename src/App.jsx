@@ -5,28 +5,41 @@ import {
 } from 'react-router-dom';
 import Footer from './components/footer/Footer';
 import Nabar from './components/navbar/Nabar';
-
+import LotAnimation from './assets/loottie/LotAnimation';
 import Home from './components/pages/Home';
 import UseStates from './components/pages/UseStates';
+import { useEffect, useState } from 'react';
+
 
 function App() {
-  
+  const [loading, setLoading] =useState(true)
 
-  return (
-    <div className="App">
-     
+  useEffect(()=>{
+    setTimeout(()=>{
+      setLoading(false)
+    },2000)
+  },[])
+
+
+ 
+
+  return (<>
+    {loading ? <div className='lt4'> 
+    <div className='lt5'> <LotAnimation src='https://assets8.lottiefiles.com/packages/lf20_b88nh30c.json' /></div>
+    </div>
+  : <div className="App">
      <Nabar />
       <Routes>
-        
+     
     <Route exact path='/' element={< Home />}></Route>
     <Route exact path='/UseStates' element={< UseStates />}></Route>
 
 
 </Routes>
 <Footer />
-</div>
+</div>}
 
-   )
+</> )
 }
 
 export default App
