@@ -60,16 +60,19 @@ a .icon{
       justify-content: flex-end;
       padding-right: 1rem;
       align-items: center;
+
     }
     &__item{
         list-style: none;
         display: inline;
+      
         a{
           color: $font-primary;
           display: inline;
-          font-weight: 500;
-          font-size: 1.5rem;
+          font-weight: 600;
+          font-size: 1.2rem;
           text-decoration: none;
+          text-transform: uppercase;
           transition: all 0.45s ease-in;
           &:hover{
             color: $font-hover;
