@@ -1,11 +1,23 @@
 import img1 from '../components/imgs/useSTate.png'
 
+
 export const navLinks = [
     {id:1, links:'/', title:'Home'},
-    {id:2, links:'/UseStates', title:'useState'},
-    {id:3, links:'/UseEffects', title:'UseEffect'},
-    {id:4, links:'/UseRefs', title:'UseRef'},
+    {id:2, links:'/UseStates', title:'useState', submenu: [
+        { links:'/UseSFundmental', titleSub: `UseFunda mental`},
+        { links:'/RenderRender', titleSub: `RenderRender`}
+    ] },
+    {id:3, links:'/UseEffects', title:'UseEffect', submenu: [
+        { links:'/UseSFundmental', titleSub: `UseFunda mental`},
+        { links:'/RenderRender', titleSub: `RenderRender`}
+    ] },
+    {id:4, links:'/UseRefs', title:'UseRef', submenu: [
+        { links:'/UseSFundmental', titleSub: `UseFunda mental`},
+        { links:'/RenderRender', titleSub: `RenderRender`}
+    ] },
 ]
+
+
 
 export const homeData = [
     {id:1, link:'https://react.dev/learn' },

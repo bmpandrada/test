@@ -37,6 +37,7 @@ a .icon{
   color: $color-ligth;
   font-size: 2.5rem;
 }
+
 .navbar{
   display: flex;
   background-color: $tertiary-color;
@@ -44,8 +45,32 @@ a .icon{
   position: relative;
   z-index: 9999;
   transition: all 0.6s ease-in;
+  padding: 1rem 5rem;
+ 
+  &__submenu{
+    display: none;
+    z-index: 9999;
+    position: absolute;
+    top: 100%;
+    border-bottom: .1rem solid $font-hover;
+    width: 20rem;
+    left: 0;
+    transform: translate(-50%);
+     background-color: $tertiary-color;
+     padding: 1rem;
+     border-radius: .5rem;
+  }
+  &__iconSm{
+    color: $font-hover;
+    margin-right: 1rem;
+    margin-bottom: -.3rem;
+ 
+  }
+  &__sub-item{
+    list-style: none;
+  }
+ 
   &__header{
-    padding: 1rem;
     z-index: 999;
   }
   &__img{
@@ -58,17 +83,26 @@ a .icon{
       gap: 1rem;
       width: 100%;
       justify-content: flex-end;
-      padding-right: 1rem;
+      
       align-items: center;
-
+    
+      
     }
+    
     &__item{
         list-style: none;
         display: inline;
-      
+        position: relative;
+        transition: all 0.6s ease-in;
+        transition-delay: 0.6s;
+       
+        &:hover  .navbar__submenu {
+          display: inline-block;
+        
+        }
+       
         a{
           color: $font-primary;
-          display: inline;
           font-weight: 600;
           font-size: 1.2rem;
           text-decoration: none;
@@ -88,6 +122,7 @@ a .icon{
     height: auto;
     margin-right: 1rem;
     transition: all 3s ease-in;
+    padding-right: 7.5rem;
   }
 
    
@@ -335,21 +370,41 @@ a .icon{
 
 @media only screen and (max-width: 600px) {
  
-  .navbar__list{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    height: 80vh;
-    width: 100%;
-    background-color: $tertiary-color;
-    text-align: center;
-    top: 0;
-    left: -100%;
-    transform: translate(-50% -50%);
-    transition: all 0.3s ease-in;
-    
-  }
+  .navbar{
+    &__submenu{
+      
+      z-index: 9999;
+      position: absolute;
+      left: 78%;
+      padding: 0;
+      background-color:#00000000;
+      border: 0;
+      top: 0;
+      text-align: justify;
+    }
+    &__list{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      height: 80vh;
+      width: 100%;
+     
+      background-color: $tertiary-color;
+      text-align: center;
+      top: 0;
+      left: -100%;
+      transform: translate(-50% -50%);
+      transition: all 0.3s ease-in;
+     
+    }
+    &__item{
+      width: 100%;
+   
+     
+    }
+    }
+  
   .active{
     left: 0;
     transition: all 0.3s ease-in;

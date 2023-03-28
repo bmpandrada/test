@@ -4,6 +4,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import reactLogo from '../../assets/logo/react.svg';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
+import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 import SendIcon from '@mui/icons-material/Send';
 import { navLinks } from '../../data/data';
 import {
@@ -25,12 +26,21 @@ const Nabar = () => {
 
 
     <ul className={`${toogle ? 'navbar__list' : 'navbar__list  show active'}`}>
-      {navLinks.map(({id, links, title})=>{
+      {navLinks.map(({id, links, title, submenu})=>{
 
      
      return <li className='navbar__item' key={id}>
         <Link to={links} onClick={()=>setToggle(!toogle)} 
         >{title}</Link>
+        {submenu && (
+          <ul className='navbar__submenu'>
+            {submenu.map((subItem, subIndex)=>{
+              return(<li className='navbar__sub-item' key={subIndex}><DoubleArrowIcon className='navbar__iconSm'/>
+                <Link to={`${subItem.links}`} onClick={()=>setToggle(!toogle)}>{subItem.titleSub}</Link>
+              </li>)
+            })}
+          </ul>
+        )}
       </li>
     })}
       
