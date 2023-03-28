@@ -46,8 +46,9 @@ a .icon{
   z-index: 9999;
   transition: all 0.6s ease-in;
   padding: 1rem 5rem;
- 
+  
   &__submenu{
+  
     display: none;
     z-index: 9999;
     position: absolute;
@@ -371,16 +372,31 @@ a .icon{
 @media only screen and (max-width: 600px) {
  
   .navbar{
+   
+    padding: 1rem 3rem;
     &__submenu{
       
       z-index: 9999;
-      position: absolute;
-      left: 78%;
-      padding: 0;
+      position: relative;
+      left: 45%;
+     
+
+      top: 0;
       background-color:#00000000;
       border: 0;
-      top: 0;
       text-align: justify;
+    }
+    &__item{
+      list-style: none;
+      display: inline;
+      position: relative;
+      transition: all 0.6s ease-in;
+      transition-delay: 0.6s;
+     
+      &:hover  .navbar__submenu {
+        display: inline;
+      
+      }
     }
     &__list{
       display: flex;
@@ -403,8 +419,9 @@ a .icon{
    
      
     }
+   
     }
-  
+   
   .active{
     left: 0;
     transition: all 0.3s ease-in;
