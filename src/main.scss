@@ -137,7 +137,7 @@ a .icon{
 }
 .lt3{
   right: 0;
-  
+  animation: fadeInLeft 2.5s ease-in 0.3s;
   height: 9vh;
   margin-right: -14rem;
   position: absolute;
@@ -167,6 +167,7 @@ a .icon{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: left;
+    backface-visibility: hidden;
     padding: 5rem;
     display: flex;
     align-items: center;
@@ -187,13 +188,16 @@ a .icon{
     justify-content: flex-end;
     align-items: center;
     z-index: 99;
+    animation: fadeInLeft 1.5s ease-in 0.3s;
   }
   &__page2{
     width: 100%;
     z-index: 99;
+    animation: fadeInRight 1.5s ease-in 0.3s;
   }
   &__page3{
-    z-index: 99;
+    z-index: 99; 
+    animation: fadeIn 1s ease-in 0.8s;
     ul{
       margin: 0;
       padding: 0;
@@ -273,6 +277,49 @@ a .icon{
   }
   to {
     transform: rotate(360deg);
+ 
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: translateX();
+  }
+  to {
+    transform: rotate(360deg);
+ 
+  }
+}
+@keyframes fadeInRight {
+  0% {
+     opacity: 0;
+     transform: translateX(100%);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+} 
+
+@keyframes fadeInLeft {
+  0% {
+     opacity: 0;
+     transform: translateX(-100%);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+     opacity: 0;
+     
+  }
+  100% {
+   
+     opacity: 1;
   }
 }
 @media only screen and (max-width: 1029px) {
@@ -315,6 +362,7 @@ a .icon{
         font-family: sans-serif;
         font-weight: 200;
       }
+     
     }
   .container__img{
     width:100%;
@@ -330,13 +378,7 @@ a .icon{
      
     }
     
-    &__vids{
-      width: 100%; 
-    }
-    &__vid{
-      width: 100%;
-
-    }
+  
     &__text{
       width: 100%;
      
@@ -467,7 +509,8 @@ a .icon{
       width: 100%;
   }
   &__vids{
-    width: 100%; 
+    width: 100%;
+  
   }
   &__vid{
     width: 100%;
@@ -498,5 +541,12 @@ a .icon{
     margin-top: -5rem;
     z-index: 0;
   }
-  
+  .lt3{
+    right: 0;
+    animation: fadeInRight 2.5s ease-in 0.3s;
+    height: 9vh;
+    margin-right: -14rem;
+    position: absolute;
+   
+  }
 }
