@@ -28,10 +28,11 @@ const Nabar = () => {
     <ul className={`${toogle ? 'navbar__list' : 'navbar__list  show active'}`}>
       {navLinks.map(({id, links, title, submenu})=>{
 
-// to={links}
+     
      return <li className='navbar__item' key={id}>
-        <Link onClick={()=>setToggle(!toogle)} 
-        >{title}</Link>
+        {/* <Link to={links} onClick={()=>setToggle(!toogle)} 
+        >{title}</Link> */}
+        {title}
         {submenu && (
           <ul className='navbar__submenu' >
             {submenu.map((subItem, subIndex)=>{
