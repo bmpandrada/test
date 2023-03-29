@@ -6,12 +6,13 @@ import {
 import Footer from './components/footer/Footer';
 import Nabar from './components/navbar/Nabar';
 import LotAnimation from './assets/loottie/LotAnimation';
-import Home from './components/pages/Home';
-import UseSFundmental from './components/pages/UseSFundmental';
-import UseStates from './components/pages/UseStates';
-import UseEffects from './components/pages/UseEffects';
-import RenderRender from './components/pages/RenderRender';
-import UseRefs from './components/pages/UseRefs';
+// import Home from './components/pages/Home';
+// import UseSFundmental from './components/pages/UseSFundmental';
+// import UseStates from './components/pages/UseStates';
+// import UseEffects from './components/pages/UseEffects';
+// import RenderRender from './components/pages/RenderRender';
+// import UseRefs from './components/pages/UseRefs';
+import { UseSFundmental, UseStates, UseEffects, UseRefs, RenderRender, Forms, Home} from './components/pages'
 import { useEffect, useState } from 'react';
 
 
@@ -41,6 +42,8 @@ function App() {
     <Route exact path='/UseRefs' element={< UseRefs />}></Route>
     <Route exact path='/UseSFundmental' element={< UseSFundmental />}></Route>
     <Route exact path='/RenderRender' element={< RenderRender />}></Route>
+    <Route exact path='/RenderRender' element={< RenderRender />}></Route>
+    <Route exact path='/Form' element={< Forms />}></Route>
 
 </Routes>
 <Footer />

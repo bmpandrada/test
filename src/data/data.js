@@ -15,6 +15,10 @@ export const navLinks = [
         { links:'/UseSFundmental', titleSub: `UseFunda mental`},
         { links:'/RenderRender', titleSub: `RenderRender`}
     ] },
+    {id:5, links:'/Form', title:'Form', submenu: [
+        { links:'/UseSFundmental', titleSub: `UseFunda mental`},
+        { links:'/RenderRender', titleSub: `RenderRender`}
+    ] },
 ]
 
 
