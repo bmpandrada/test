@@ -30,7 +30,7 @@ function App() {
 
   return (<>
     {loading ? <div className='lt4'> 
-    <div className='lt5'> <LotAnimation src='https://assets8.lottiefiles.com/packages/lf20_b88nh30c.json' /></div>
+    <div className='lt5'> <LotAnimation src='https://assets4.lottiefiles.com/packages/lf20_Stt1R6.json' style={{width:'100px'}} /></div>
     </div>
   : <div className="App">
      <Nabar />

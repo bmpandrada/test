@@ -28,7 +28,7 @@ const Home = () => {
       </div>
 
       <div className='container__page2 page--2'>
-      <LotAnimation src="https://assets2.lottiefiles.com/packages/lf20_xRmNN8.json" />
+      <LotAnimation src="https://assets2.lottiefiles.com/packages/lf20_xRmNN8.json" style={{ width:'300px', height:'300px'}}/>
 
       </div>
       </div>

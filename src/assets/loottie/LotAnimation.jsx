@@ -3,7 +3,7 @@ import { Player } from '@lottiefiles/react-lottie-player';
 
 import React from 'react'
 
-const LotAnimation = ({src}) => {
+const LotAnimation = ({src, style}) => {
   
   return (
     <Player className='lot'
@@ -11,7 +11,7 @@ const LotAnimation = ({src}) => {
     loop
     speed='.6'
     src={src}
-    style={{ height: '300px', width: '300px' }}
+    style={style || {width:'300px'}}
   >
     
   </Player>
