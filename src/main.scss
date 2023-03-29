@@ -53,7 +53,7 @@ a .icon{
     visibility: hidden;
     z-index: 9999;
     position: absolute;
-    top: 100%;
+    top: 0;
     border-bottom: .1rem solid $font-hover;
     width: 20rem;
     left: 0;
@@ -104,6 +104,7 @@ a .icon{
           visibility: visible;
           opacity: 1;
           transition-delay: 0.3s;
+          top: 100%;
         }
        
         a{
@@ -384,10 +385,10 @@ a .icon{
     }
     padding: 1rem 3rem;
     &__submenu{
-     position: absolute;
+      display: none;
       z-index: 9999;
-     
-      left: 75%;
+      position: relative;
+      left: 35%;
      
       visibility: hidden;
       top: 0;
@@ -403,7 +404,7 @@ a .icon{
       transition-delay: 0.6s;
     
       &:hover  .navbar__submenu {
-        visibility: visible;
+       display: inline;
       
       }
     }
