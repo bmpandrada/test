@@ -1,9 +1,10 @@
 import img1 from '../components/imgs/useSTate.png'
 
-// links:'/UseStates',
+
 export const navLinks = [
     {id:1, links:'/', title:'Home'},
-    {id:2,  title:'useState', submenu: [
+    {id:2, title:'/useState', submenu: [
+        { links:'/UseStates', titleSub: `UseStates`},
         { links:'/UseSFundmental', titleSub: `UseFunda mental`},
         { links:'/RenderRender', titleSub: `RenderRender`}
     ] },
