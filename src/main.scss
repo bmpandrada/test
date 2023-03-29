@@ -94,6 +94,15 @@ a .icon{
         display: inline;
         position: relative;
      
+        color: $font-primary;
+          font-weight: 600;
+          font-size: 1.2rem;
+          text-decoration: none;
+          text-transform: uppercase;
+          transition: all 0.45s ease-in;
+          &:hover{
+            color: $font-hover;
+          }
        
         &:hover  .navbar__submenu {
           visibility: visible;
