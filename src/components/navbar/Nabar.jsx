@@ -37,14 +37,14 @@ const Nabar = () => {
             {submenu.map((subItem, subIndex)=>{
               return(<li className='navbar__sub-item' key={subIndex}
               ><DoubleArrowIcon className='navbar__iconSm'/>
-                <Link to={`${subItem.links}`} onClick={()=>setToggle(!toogle)}>{subItem.titleSub}</Link>
+                <Link  onClick={()=>setToggle(!toogle)}>{subItem.titleSub}</Link>
               </li>)
             })}
           </ul>
         )}
       </li>
     })}
-      
+      {/* to={`${subItem.links} `} */}
     </ul>
     <div className='navbar__burger' onClick={()=>setToggle(!toogle)}>
     {toogle ?  <MenuIcon style={{ fontSize: "3rem",  transition: 'all 0.6s ease-in' }} /> : 
