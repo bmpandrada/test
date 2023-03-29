@@ -123,7 +123,7 @@ a .icon{
     height: auto;
     // margin-right: 1rem;
     transition: all 3s ease-in;
-    padding-right: 7.5rem;
+    padding-right: 5.5rem;
   }
 
    
@@ -477,7 +477,8 @@ a .icon{
     transition: all 0.3s ease-in;
     visibility:visible;
   }
-  .navbar__burger{
+    .navbar__burger{
+    margin: 0;
       display: block;
       position: absolute;
       right: 0;
