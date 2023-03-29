@@ -17,6 +17,7 @@ const UseEffects = () => {
           </div>
       <img className='container__img' src={state} alt="" />
       </div>
+      
       <div className='container__page2 page--2'>
       <div className='container__text'>
       <h2>UseEffect</h2>
