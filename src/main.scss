@@ -93,16 +93,7 @@ a .icon{
         list-style: none;
         display: inline;
         position: relative;
-        cursor: pointer;
-        color: $font-primary;
-          font-weight: 600;
-          font-size: 1.2rem;
-          text-decoration: none;
-          text-transform: uppercase;
-          transition: all 0.45s ease-in;
-          &:hover{
-            color: $font-hover;
-          }
+     
        
         &:hover  .navbar__submenu {
           visibility: visible;
