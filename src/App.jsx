@@ -21,7 +21,7 @@ function App() {
   useEffect(()=>{
     setTimeout(()=>{
       setLoading(false)
-    },2000)
+    },1000)
   },[])
 
 
@@ -29,7 +29,7 @@ function App() {
 
   return (<>
     {loading ? <div className='lt4'> 
-    <div className='lt5'> <LotAnimation src='https://assets8.lottiefiles.com/packages/lf20_b88nh30c.json' /></div>
+    <div className='lt5'> <LotAnimation src='https://assets8.lottiefiles.com/packages/lf20_b88nh30c.json' className='lotties' /></div>
     </div>
   : <div className="App">
      <Nabar />

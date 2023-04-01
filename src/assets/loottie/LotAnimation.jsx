@@ -6,7 +6,7 @@ import React from 'react'
 const LotAnimation = ({src}) => {
   
   return (
-    <Player className='lot'
+    <Player className='lotties'
     autoplay
     loop
     speed='.6'
