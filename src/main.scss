@@ -156,7 +156,7 @@ a .icon{
 }
 
 .container{
-<<<<<<< HEAD
+
   // height: 100%;
   // width: 100%;
   // position: relative;
@@ -167,7 +167,7 @@ a .icon{
   display: grid;
   grid-template-columns: 1fr;
   
-=======
+
   height: 100vh;
   width: 100%;
   position: relative;
@@ -181,7 +181,7 @@ a .icon{
   background-attachment: fixed;
   background-position: left;
   backface-visibility: hidden;
->>>>>>> b3099e85bfece96f8a8cace80b7a4d7013505ea9
+
   &__pages{
  
     padding: 5rem;
@@ -278,9 +278,7 @@ a .icon{
   padding: .5rem;
   z-index: 999;
    clear: both; 
-   &__text{
-    
-   }
+ 
    &__contact{
     .icon{
       font-size: 2rem;
@@ -439,9 +437,9 @@ a .icon{
 @media only screen and (max-width: 600px) {
  
   .navbar{
-<<<<<<< HEAD
+
    
-=======
+
     width: 100%;
     &__iconSm{
       color: $font-hover;
@@ -449,22 +447,22 @@ a .icon{
       margin-bottom: -.3rem;
       
     }
->>>>>>> b3099e85bfece96f8a8cace80b7a4d7013505ea9
+
     padding: 1rem 3rem;
     &__submenu{
       margin: 0;
       z-index: 9999;
-<<<<<<< HEAD
+
       position: relative;
       left: 45%;
      
 
-=======
+
       
       right: 45%;
       left: 55%;
       display: none;
->>>>>>> b3099e85bfece96f8a8cace80b7a4d7013505ea9
+
       top: 0;
       background-color:#00000000;
       border: 0;
@@ -477,12 +475,11 @@ a .icon{
       position: relative;
       transition: all 0.6s ease-in;
       transition-delay: 0.6s;
-<<<<<<< HEAD
+
      
       &:hover  .navbar__submenu {
         display: inline;
-=======
->>>>>>> b3099e85bfece96f8a8cace80b7a4d7013505ea9
+
       
       &:hover  .navbar__submenu {
        display: block;
@@ -587,9 +584,9 @@ a .icon{
     z-index: 0;
    
   }
-<<<<<<< HEAD
 
-=======
+
+
   .lt3{
     right: 0;
     animation: fadeInRight 2.5s ease-in 0.3s;
@@ -598,5 +595,6 @@ a .icon{
     position: absolute;
    
   }
->>>>>>> b3099e85bfece96f8a8cace80b7a4d7013505ea9
+
+  }
 }
