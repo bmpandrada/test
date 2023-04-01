@@ -6,12 +6,13 @@ import {
 import Footer from './components/footer/Footer';
 import Nabar from './components/navbar/Nabar';
 import LotAnimation from './assets/loottie/LotAnimation';
-import Home from './components/pages/Home';
-import UseSFundmental from './components/pages/UseSFundmental';
-import UseStates from './components/pages/UseStates';
-import UseEffects from './components/pages/UseEffects';
-import RenderRender from './components/pages/RenderRender';
-import UseRefs from './components/pages/UseRefs';
+// import Home from './components/pages/Home';
+// import UseSFundmental from './components/pages/UseSFundmental';
+// import UseStates from './components/pages/UseStates';
+// import UseEffects from './components/pages/UseEffects';
+// import RenderRender from './components/pages/RenderRender';
+// import UseRefs from './components/pages/UseRefs';
+import { UseSFundmental, UseStates, UseEffects, UseRefs, RenderRender, Forms, Home} from './components/pages'
 import { useEffect, useState } from 'react';
 
 
@@ -29,7 +30,11 @@ function App() {
 
   return (<>
     {loading ? <div className='lt4'> 
+<<<<<<< HEAD
     <div className='lt5'> <LotAnimation src='https://assets8.lottiefiles.com/packages/lf20_b88nh30c.json' className='lotties' /></div>
+=======
+    <div className='lt5'> <LotAnimation src='https://assets4.lottiefiles.com/packages/lf20_Stt1R6.json' style={{width:'100px'}} /></div>
+>>>>>>> b3099e85bfece96f8a8cace80b7a4d7013505ea9
     </div>
   : <div className="App">
      <Nabar />
@@ -41,6 +46,8 @@ function App() {
     <Route exact path='/UseRefs' element={< UseRefs />}></Route>
     <Route exact path='/UseSFundmental' element={< UseSFundmental />}></Route>
     <Route exact path='/RenderRender' element={< RenderRender />}></Route>
+    <Route exact path='/RenderRender' element={< RenderRender />}></Route>
+    <Route exact path='/Form' element={< Forms />}></Route>
 
 </Routes>
 <Footer />

@@ -33,10 +33,11 @@ const Nabar = () => {
         <Link to={links} onClick={()=>setToggle(!toogle)} 
         >{title}</Link>
         {submenu && (
-          <ul className='navbar__submenu'>
+          <ul className='navbar__submenu' >
             {submenu.map((subItem, subIndex)=>{
-              return(<li className='navbar__sub-item' key={subIndex}><DoubleArrowIcon className='navbar__iconSm'/>
-                <Link to={`${subItem.links}`} onClick={()=>setToggle(!toogle)}>{subItem.titleSub}</Link>
+              return(<li className='navbar__sub-item' key={subIndex}
+              ><DoubleArrowIcon className='navbar__iconSm'/>
+                <Link to={`${subItem.links} `} onClick={()=>setToggle(!toogle)}>{subItem.titleSub}</Link>
               </li>)
             })}
           </ul>

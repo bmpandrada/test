@@ -4,6 +4,7 @@ import img1 from '../components/imgs/useSTate.png'
 export const navLinks = [
     {id:1, links:'/', title:'Home'},
     {id:2, links:'/UseStates', title:'useState', submenu: [
+        { links:'/UseStates', titleSub: `UseFunda mental`},
         { links:'/UseSFundmental', titleSub: `UseFunda mental`},
         { links:'/RenderRender', titleSub: `RenderRender`}
     ] },
@@ -12,6 +13,10 @@ export const navLinks = [
         { links:'/RenderRender', titleSub: `RenderRender`}
     ] },
     {id:4, links:'/UseRefs', title:'UseRef', submenu: [
+        { links:'/UseSFundmental', titleSub: `UseFunda mental`},
+        { links:'/RenderRender', titleSub: `RenderRender`}
+    ] },
+    {id:5, links:'/Form', title:'Form', submenu: [
         { links:'/UseSFundmental', titleSub: `UseFunda mental`},
         { links:'/RenderRender', titleSub: `RenderRender`}
     ] },

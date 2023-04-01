@@ -44,15 +44,18 @@ a .icon{
   align-items: center;
   position: relative;
   z-index: 9999;
-  transition: all 0.6s ease-in;
+  
   padding: 1rem 5rem;
   
   &__submenu{
   
-    display: none;
+    opacity: 0;
+    margin-top: 1.5rem;
+    list-style: none;
+    visibility: hidden;
     z-index: 9999;
     position: absolute;
-    top: 100%;
+    top: 0;
     border-bottom: .1rem solid $font-hover;
     width: 20rem;
     left: 0;
@@ -60,6 +63,7 @@ a .icon{
      background-color: $tertiary-color;
      padding: 1rem;
      border-radius: .5rem;
+     transition: all 0.3s ease-in;
   }
   &__iconSm{
     color: $font-hover;
@@ -67,39 +71,37 @@ a .icon{
     margin-bottom: -.3rem;
  
   }
-  &__sub-item{
-    list-style: none;
-  }
+ 
  
   &__header{
     z-index: 999;
+    
   }
   &__img{
       width: 4.5rem;
       animation: rotation infinite 15s ease-in;
-   
+      margin-right: .8rem;
     }
     &__list{
       display: flex;
       gap: 1rem;
       width: 100%;
       justify-content: flex-end;
-      
       align-items: center;
-    
-      
     }
     
     &__item{
         list-style: none;
         display: inline;
         position: relative;
-        transition: all 0.6s ease-in;
-        transition-delay: 0.6s;
+     
        
         &:hover  .navbar__submenu {
-          display: inline-block;
-        
+          visibility: visible;
+          opacity: 1;
+          transition-delay: 0.3s;
+          top: 100%;
+          
         }
        
         a{
@@ -109,6 +111,7 @@ a .icon{
           text-decoration: none;
           text-transform: uppercase;
           transition: all 0.45s ease-in;
+          
           &:hover{
             color: $font-hover;
           }
@@ -121,9 +124,9 @@ a .icon{
     width: 2.5rem;
     color: $primary-color;
     height: auto;
-    margin-right: 1rem;
+    // margin-right: 1rem;
     transition: all 3s ease-in;
-    padding-right: 7.5rem;
+    padding-right: 5.5rem;
   }
 
    
@@ -137,7 +140,7 @@ a .icon{
 }
 .lt3{
   right: 0;
-  
+  animation: fadeInLeft 2.5s ease-in 0.3s;
   height: 9vh;
   margin-right: -14rem;
   position: absolute;
@@ -153,6 +156,7 @@ a .icon{
 }
 
 .container{
+<<<<<<< HEAD
   // height: 100%;
   // width: 100%;
   // position: relative;
@@ -163,18 +167,29 @@ a .icon{
   display: grid;
   grid-template-columns: 1fr;
   
+=======
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background-image: url('./components/imgs/wallpaper.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  backface-visibility: hidden;
+>>>>>>> b3099e85bfece96f8a8cace80b7a4d7013505ea9
   &__pages{
-    background-image: url('./components/imgs/wallpaper.png');
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: left;
+ 
     padding: 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center; 
-    height: 100vh;
+    // height: 100vh;
     gap: 2rem;
     width: 100%;
     z-index: 99;
@@ -190,13 +205,16 @@ a .icon{
     justify-content: flex-end;
     align-items: center;
     z-index: 99;
+    animation: fadeInLeft 1.5s ease-in 0.3s;
   }
   &__page2{
     width: 100%;
     z-index: 99;
+    animation: fadeInRight 1.5s ease-in 0.3s;
   }
   &__page3{
-    z-index: 99;
+    z-index: 99; 
+    animation: fadeIn 1s ease-in 0.8s;
     ul{
       margin: 0;
       padding: 0;
@@ -277,6 +295,49 @@ a .icon{
   }
   to {
     transform: rotate(360deg);
+ 
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: translateX();
+  }
+  to {
+    transform: rotate(360deg);
+ 
+  }
+}
+@keyframes fadeInRight {
+  0% {
+     opacity: 0;
+     transform: translateX(100%);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+} 
+
+@keyframes fadeInLeft {
+  0% {
+     opacity: 0;
+     transform: translateX(-100%);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+     opacity: 0;
+     
+  }
+  100% {
+   
+     opacity: 1;
   }
 }
 @media only screen and (max-width: 1029px) {
@@ -320,6 +381,7 @@ a .icon{
         font-family: sans-serif;
         font-weight: 200;
       }
+     
     }
   .container__img{
     width:100%;
@@ -341,13 +403,7 @@ a .icon{
      
     }
     
-    &__vids{
-      width: 100%; 
-    }
-    &__vid{
-      width: 100%;
-
-    }
+  
     &__text{
       width: 100%;
      
@@ -383,15 +439,32 @@ a .icon{
 @media only screen and (max-width: 600px) {
  
   .navbar{
+<<<<<<< HEAD
    
+=======
+    width: 100%;
+    &__iconSm{
+      color: $font-hover;
+      margin-right: 1rem;
+      margin-bottom: -.3rem;
+      
+    }
+>>>>>>> b3099e85bfece96f8a8cace80b7a4d7013505ea9
     padding: 1rem 3rem;
     &__submenu{
-      
+      margin: 0;
       z-index: 9999;
+<<<<<<< HEAD
       position: relative;
       left: 45%;
      
 
+=======
+      
+      right: 45%;
+      left: 55%;
+      display: none;
+>>>>>>> b3099e85bfece96f8a8cace80b7a4d7013505ea9
       top: 0;
       background-color:#00000000;
       border: 0;
@@ -399,14 +472,22 @@ a .icon{
     }
     &__item{
       list-style: none;
-      display: inline;
+      display: block;
+     
       position: relative;
       transition: all 0.6s ease-in;
       transition-delay: 0.6s;
+<<<<<<< HEAD
      
       &:hover  .navbar__submenu {
         display: inline;
+=======
+>>>>>>> b3099e85bfece96f8a8cace80b7a4d7013505ea9
       
+      &:hover  .navbar__submenu {
+       display: block;
+      top: 1%;
+      position: relative;
       }
     }
     &__list{
@@ -438,7 +519,8 @@ a .icon{
     transition: all 0.3s ease-in;
     visibility:visible;
   }
-  .navbar__burger{
+    .navbar__burger{
+    margin: 0;
       display: block;
       position: absolute;
       right: 0;
@@ -471,7 +553,8 @@ a .icon{
       width: 100%;
   }
   &__vids{
-    width: 100%; 
+    width: 100%;
+  
   }
   &__vid{
     width: 100%;
@@ -504,5 +587,16 @@ a .icon{
     z-index: 0;
    
   }
+<<<<<<< HEAD
 
+=======
+  .lt3{
+    right: 0;
+    animation: fadeInRight 2.5s ease-in 0.3s;
+    height: 9vh;
+    margin-right: -14rem;
+    position: absolute;
+   
+  }
+>>>>>>> b3099e85bfece96f8a8cace80b7a4d7013505ea9
 }
